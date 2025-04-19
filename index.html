@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/file.ico" type="image/png">
     <title>João Antunes Personal Portfolio</title>
-
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
     <!-- box icons -->
+     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -373,51 +373,77 @@
  <!-- Projects section design -->
  <section class="portfolio" id="projects">
     <h2 class="heading">My <span>projects</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-    <div class="portfolio-container">
-        <div class="portfolio-box">
-            <img src="images/ANGULAR.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Geocaching em Almeida</h4>
-                <p>Final degree project, which consists of independent tourism, through the search for QR's in the village of Almeida. The website gives clues and coordinates to find the QR's. The goal is to get to know Almeida in a more fun and independent way.</p>
-                <p>It is currently not active on the website only and you can view the code on GitHub.</p>
-                <a href="https://github.com/jmfa2310/Projeto_Angular.git" target="_blank"><i  class='bx bx-link-external'></i></a>
+    <div class="container">
+        <div class="card-content" style="display: none">
+          <div class="card">
+            <div class="card-image"><img src="./images/ANGULAR.png" alt=""></div>
+            <div class="card-info">
+              <h3>Geocaching em Almeida</h3>
+              <p>Final degree project, which consists of independent tourism, through the search for QR's in the village of Almeida. The website gives clues and coordinates to find the QR's. The goal is to get to know Almeida in a more fun and independent way.</p>
+              <p>It is currently not active on the website only and you can view the code on GitHub.</p>
+              <a href="https://github.com/jmfa2310/Projeto_Angular.git" target="_blank"><i class='bx bx-link-external' style="font-size: 24px; color: #000;"></i></a>
             </div>
-            <span class="animate scroll" style="--i:3;"></span>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="images/despesas.png" alt="">
-            <div class="portfolio-layer">
-                <h4>GastoSmart</h4>
-                <p>Simple application but fulfills all its purposes, which is to compare and get an idea of monthly or annual expenses and earnings. Ideal application for families who want to manage their expenses and earnings.</p>
-                <p>It is currently not active on the website .</p>
-                <a href="https://personal-ryecy7df.outsystemscloud.com/controlodedespesas/Login" target="_blank" ><i class='bx bx-link-external'></i></a>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./images/chapeu-de-cozinheiro.png" alt=""></div>
+            <div class="card-info">
+              <h3>CozinhaCriativaa</h3>
+                  <p>Kitchen recipes project. Where you can post your recipes or simply ask for random creation. You can also add the recipes you liked the most to your favorites.</p>
+                  <p>It is currently not active on the website.</p>
+                  <a href="https://personal-ryecy7df.outsystemscloud.com/CozinhaCriativa/Login" target="_blank" ><i class='bx bx-link-external' style="font-size: 24px; color: #000;"></i></a>
             </div>
-            <span class="animate scroll" style="--i:3;"></span>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="images/chapeu-de-cozinheiro.png" alt="">
-            <div class="portfolio-layer">
-                <h4>CozinhaCriativaa</h4>
-                <p>Kitchen recipes project. Where you can post your recipes or simply ask for random creation. You can also add the recipes you liked the most to your favorites.</p>
-                <p>It is currently not active on the website.</p>
-                <a href="https://personal-ryecy7df.outsystemscloud.com/CozinhaCriativa/Login" target="_blank" ><i class='bx bx-link-external'></i></a>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./images/despesas.png" alt=""></div>
+            <div class="card-info">
+              <h3>GastoSmart</h3>
+                  <p>Simple application but fulfills all its purposes, which is to compare and get an idea of monthly or annual expenses and earnings. Ideal application for families who want to manage their expenses and earnings.</p>
+                  <p>It is currently not active on the website .</p>
+                  <a href="https://personal-ryecy7df.outsystemscloud.com/controlodedespesas/Login" target="_blank" ><i class='bx bx-link-external' style="font-size: 24px; color: #000;"></i></a>
             </div>
-            <span class="animate scroll" style="--i:3;"></span>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="images/Bookings.sleeping297048_640.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Bookings</h4>
-                <p>Project that consists of managing a hotel, being able to place rooms and monitor check-ins and check-outs and much more. And it also counts as an admin area, where whoever has the role can manage the settings.</p>
-                <p>It is currently active on the website.</p>
-                <a href="https://personal-ryecy7df.outsystemscloud.com/Bookings/Login" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./images/Bookings.sleeping297048_640.png" alt=""></div>
+            <div class="card-info">
+              <H3>Bookings</H3>
+              <p>Project that consists of managing a hotel, being able to place rooms and monitor check-ins and check-outs and much more. And it also counts as an admin area, where whoever has the role can manage the settings.</p>
+                  <p>It is currently active on the website.</p>
+                  <a href="https://personal-ryecy7df.outsystemscloud.com/Bookings/Login" target="_blank"><i class='bx bx-link-external' style="font-size: 24px; color: #000;"></i></a>
             </div>
-            <span class="animate scroll" style="--i:3;"></span>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./images/rp9.webp" alt=""></div>
+            <div class="card-info">
+              <h3>Calculadora Python</h3>
+             <p> Calculadora_Python is a simple application developed in Python that allows you to perform basic mathematical operations such as addition, subtraction, multiplication, and division.</p>
+             <p>It can also be expanded with features like exponentiation, roots, percentages, or even a graphical interface using libraries like tkinter.</p>
+             <a href="https://github.com/jmfa2310/Calculadora_Python" target="_blank"><i class='bx bx-link-external' style="font-size: 24px; color: #000;"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./images/logo192.png" alt=""></div>
+            <div class="card-info">
+              <h3>Taskmate</h3>
+              <p>TaskMate is a simple and efficient task management app built with React.</p>
+              <p>It allows users to add, edit, delete, and track their daily tasks with ease.</p>
+              <a href="https://github.com/jmfa2310/Taskmate" target="_blank"><i class='bx bx-link-external' style="font-size: 24px; color: #000;"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./images/Gallery.png" alt=""></div>
+            <div class="card-info">
+              <h3>Video Slider</h3>
+              <p>The project features a video display system with thumbnails positioned at the bottom of the page. When a thumbnail is clicked, the expanded video in the center is replaced by the corresponding video. The interaction is dynamic and intuitive, allowing easy navigation between videos.</p>
+              <a href="https://jmfa2310.github.io/Video-Slider/" target="_blank">
+                <i class='bx bx-link-external' style="font-size: 24px; color: #000;"></i>
+            </a>
+            </div>
+          </div>
         </div>
+        <div class="pagination">
+        </div>
+      </div>
+   
     </div>
 </section>
 
@@ -458,6 +484,7 @@
 
 
     <script src="js/script.js"></script>
+    <script src="js/pagination.js"></script>
 </body>
 
 </html>
