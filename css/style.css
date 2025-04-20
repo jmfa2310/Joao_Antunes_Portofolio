@@ -941,6 +941,98 @@ section:nth-child(odd) .animate.scroll,
 
 /* Responsividade para telas menores que 850px */
 @media (max-width: 850px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para dispositivos móveis e tablets menores */
+    }
+
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 20px 20px 50px;      /* Ajusta a margem */
+    }
+}
+
+/* Responsividade para telas grandes (até 1200px) */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+        margin-top: 18rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas entre 850px e 1200px */
+    }
+
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 25px 25px 55px;      /* Ajusta a margem */
+    }
+}
+
+/* Responsividade para telas de 1024px até 768px (iPad Mini e tablets) */
+@media (max-width: 1024px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* Garantir 2 colunas em telas de tablets e pequenos desktops */
+    }
+
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 25px 25px 55px;      /* Ajusta a margem */
+    }
+}
+
+/* Responsividade para telas até 768px */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+    }
+
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 30px 30px 60px;      /* Ajusta a margem */
+    }
+}
+
+/* Responsividade para telas menores que 600px */
+@media (max-width: 600px) {
+    .portfolio-container {
+        grid-template-columns: 1fr; /* 1 coluna para dispositivos móveis menores */
+    }
+
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 15px 15px 40px;      /* Ajusta a margem */
+    }
+}
+
+/* Outros estilos existentes do seu projeto continuam abaixo... */
+
+/* Responsividade para telas menores que 850px */
+@media (max-width: 850px) {
     .home-img {
         width: 100%;
         margin-top: 10%;
@@ -963,8 +1055,13 @@ section:nth-child(odd) .animate.scroll,
     .portfolio-box {
         width: 100%;
     }
-}
 
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 20px 20px 50px;      /* Ajusta a margem */
+    }
+}
 
 /* Responsividade para telas grandes (1200px) */
 @media (max-width: 1200px) {
@@ -974,10 +1071,16 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas maiores, mas menores que 1200px */
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas entre 850px e 1200px */
     }
     .portfolio-box {
         width: 100%;
+    }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 25px 25px 55px;      /* Ajusta a margem */
     }
 }
 
@@ -1005,6 +1108,12 @@ section:nth-child(odd) .animate.scroll,
     }
     .portfolio-box {
         width: 100%;
+    }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 25px 25px 55px;      /* Ajusta a margem */
     }
 }
 
@@ -1080,9 +1189,18 @@ section:nth-child(odd) .animate.scroll,
         font-size: 5rem;
     }
 
-    .home-img img {
-        width: 30vw;
+    /* Ajustando imagem para tablets */
+    .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 5rem;
+    }
+
+    .home-img img {
+        width: 100%; /* A imagem ocupa toda a largura da tela */
+        max-width: 100%; /* Evita que a imagem ultrapasse a largura disponível */
+        height: auto; /* Mantém a proporção da imagem */
     }
 
     .contact-section {
@@ -1096,7 +1214,15 @@ section:nth-child(odd) .animate.scroll,
     .portfolio-box {
         width: 100%;
     }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 25px 25px 55px;      /* Ajusta a margem */
+    }
 }
+
+/* Responsividade para telas menores que 600px */
 @media (max-width: 600px) {
     .portfolio-container {
         grid-template-columns: 1fr;
@@ -1104,11 +1230,11 @@ section:nth-child(odd) .animate.scroll,
 
     .portfolio-container .portfolio-box {
         width: 80%;
-
     }
+
     .home-img {
         margin-right: 0;
-        margin-bottom: 5%; /* Corrigi o "05%" para "5%" */
+        margin-bottom: 5%;
         flex: 1 1 50%;
         display: flex;
         justify-content: center;
@@ -1121,123 +1247,15 @@ section:nth-child(odd) .animate.scroll,
         max-width: 500px; /* Ou qualquer valor desejado */
         transition: all 0.3s ease;
     }
+
+    .pagination {
+        display: flex;               /* Garante que os itens fiquem em uma linha */
+        justify-content: center;     /* Centraliza a paginação */
+        margin: 15px 15px 40px;      /* Ajusta a margem */
+    }
 }
 
-@media (max-width: 1024px) {
-    .card-content {
-      flex-direction: column;  /* Alinha todos os itens na coluna */
-      gap: 20px;
-      margin: 20px;
-      justify-content: center;  /* Centraliza os cartões no eixo Y */
-    }
-  
-    .card {
-      width: 90%;   /* Reduz a largura para 90% */
-      max-width: 300px; /* Limita a largura máxima */
-      max-height: 500px;  /* Limita a altura do cartão */
-    }
-  
-    .card-info h3 {
-      font-size: 2em;
-    }
-  
-    .card-info p {
-      font-size: 1.6em;
-    }
-  
-    .card-image img {
-      width: 100px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .card-content {
-      flex-direction: column; /* Força a coluna */
-      gap: 15px;
-      margin: 15px;
-      justify-content: center; /* Centraliza os cartões no eixo Y */
-    }
-  
-    .card {
-      width: 100%; /* Reduz a largura para 100% */
-      max-width: 280px; /* Limita a largura máxima */
-      max-height: 450px; /* Limita a altura do cartão */
-    }
-  
-    .card-info h3 {
-      font-size: 2em;
-    }
-  
-    .card-info p {
-      font-size: 1.4em;
-    }
-  
-    .card-image img {
-      width: 100px;
-    }
-  
-    .pagination li a {
-      font-size: 1em;
-      line-height: 40px;
-    }
-  
-    .previous-page, .next-page {
-      width: 70px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card-content {
-      flex-direction: column; /* Força a coluna */
-      gap: 15px;
-      margin: 10px 0;
-      justify-content: center; /* Centraliza os cartões no eixo Y */
-    }
-  
-    .card {
-      width: 100%;  /* Reduz a largura para 100% */
-      max-width: 320px; /* Limita a largura máxima */
-      max-height: 400px;  /* Limita a altura do cartão */
-      margin: 10px 0;
-    }
-  
-    .card-info {
-      padding: 10px 15px;
-    }
-  
-    .card-info h3 {
-      font-size: 2rem;
-    }
-  
-    .card-info p {
-      font-size: 1.4rem;
-    }
-  
-    .pagination li a {
-      font-size: 1em;
-      line-height: 40px;
-    }
-  
-    .previous-page, .next-page {
-      width: 70px;
-    }
-  }
 
-  @media (min-width: 600px) and (max-width: 1024px) {
-    .card-content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      justify-items: center;
-      align-items: start;
-      margin: 20px;
-    }
-  
-    .card {
-      width: 100%;
-      max-width: 100%; /* deixa o card ocupar a coluna inteira */
-    }
-  }
 
 /* KEYFRAMES ANIMATION */
 @keyframes homeBgText {
