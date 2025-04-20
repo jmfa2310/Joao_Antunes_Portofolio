@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -940,23 +939,27 @@ section:nth-child(odd) .animate.scroll,
 /* Responsividade para tablets e telas menores (991px) */
 
 /* Responsividade para telas de 1024px até 768px (iPad Mini e tablets) */
+
+/* Responsividade para telas de 1024px até 768px (iPad Mini e tablets) */
 @media (max-width: 1024px) {
     .home-img {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
-        margin-left: 10%; /* Ajustando a posição da imagem para a direita nos tablets */
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 8%; /* Alterado para 8% */
     }
 
     .home-img img {
-        width: 100%; /* A imagem ocupa toda a largura da tela */
-        max-width: 100%; /* Evita que a imagem ultrapasse a largura disponível */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        transition: all 0.3s ease;
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* Garantir 2 colunas em telas de tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .portfolio-box {
@@ -966,8 +969,24 @@ section:nth-child(odd) .animate.scroll,
 
 /* Responsividade para telas menores que 850px */
 @media (max-width: 850px) {
+    .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 8%; /* Alterado para 8% */
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas para dispositivos móveis e tablets menores */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .portfolio-box {
@@ -975,9 +994,9 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 20px 20px 50px;      /* Ajusta a margem */
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px 50px;
     }
 }
 
@@ -989,7 +1008,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas entre 850px e 1200px */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .portfolio-box {
@@ -997,16 +1016,32 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 25px 25px 55px;      /* Ajusta a margem */
+        display: flex;
+        justify-content: center;
+        margin: 25px 25px 55px;
     }
 }
 
 /* Responsividade para telas até 768px */
 @media (max-width: 768px) {
+    .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 8%; /* Alterado para 8% */
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .portfolio-box {
@@ -1014,36 +1049,61 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 30px 30px 60px;      /* Ajusta a margem */
+        display: flex;
+        justify-content: center;
+        margin: 30px 30px 60px;
     }
 }
 
 /* Responsividade para telas menores que 600px */
 @media (max-width: 600px) {
-    .portfolio-container {
-        grid-template-columns: 1fr; /* 1 coluna para dispositivos móveis menores */
+    .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 8%; /* Alterado para 8% */
     }
 
-    .portfolio-box {
+    .home-img img {
         width: 100%;
+        max-width: 400px;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-container .portfolio-box {
+        width: 80%;
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 15px 15px 40px;      /* Ajusta a margem */
+        display: flex;
+        justify-content: center;
+        margin: 15px 15px 40px;
     }
 }
 
 /* Responsividade para telas menores que 850px */
 @media (max-width: 850px) {
     .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
         width: 100%;
-        margin-top: 10%;
-        object-fit: cover; /* A imagem vai cobrir o espaço sem distorcer */
-        animation: floatImage 4s ease-in-out infinite;
+        margin-left: 8%; /* Alterado para 8% */
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        transition: all 0.3s ease;
     }
 
     .animate.home-img {
@@ -1056,16 +1116,17 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .portfolio-container {
-        grid-template-columns: 1fr; /* 1 coluna em dispositivos móveis */
+        grid-template-columns: 1fr;
     }
+
     .portfolio-box {
         width: 100%;
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 20px 20px 50px;      /* Ajusta a margem */
+        display: flex;
+        justify-content: center;
+        margin: 20px 20px 50px;
     }
 }
 
@@ -1077,16 +1138,17 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas entre 850px e 1200px */
+        grid-template-columns: repeat(2, 1fr);
     }
+
     .portfolio-box {
         width: 100%;
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 25px 25px 55px;      /* Ajusta a margem */
+        display: flex;
+        justify-content: center;
+        margin: 25px 25px 55px;
     }
 }
 
@@ -1110,16 +1172,17 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .portfolio-container {
-        grid-template-columns: 1fr; /* 1 coluna em tablets */
+        grid-template-columns: 1fr;
     }
+
     .portfolio-box {
         width: 100%;
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 25px 25px 55px;      /* Ajusta a margem */
+        display: flex;
+        justify-content: center;
+        margin: 25px 25px 55px;
     }
 }
 
@@ -1185,28 +1248,45 @@ section:nth-child(odd) .animate.scroll,
 
     .home {
         flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
     }
 
-    .home-content h3 {
-        font-size: 2.6rem;
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 12rem;
     }
 
-    .home-content h1 {
-        font-size: 5rem;
+    .home-content h1,
+    .home-content h3,
+    .home-content p {
+        margin: 1rem 0;
     }
 
-    /* Ajustando imagem para tablets */
     .home-img {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 8%; /* Alterado para 8% */
     }
 
     .home-img img {
-        width: 100%; /* A imagem ocupa toda a largura da tela */
-        max-width: 100%; /* Evita que a imagem ultrapasse a largura disponível */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        transition: all 0.3s ease;
     }
 
     .contact-section {
@@ -1215,51 +1295,19 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .portfolio-container {
-        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+        grid-template-columns: 1fr;
     }
+
     .portfolio-box {
         width: 100%;
     }
 
     .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 25px 25px 55px;      /* Ajusta a margem */
-    }
-}
-
-/* Responsividade para telas menores que 600px */
-@media (max-width: 600px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-container .portfolio-box {
-        width: 80%;
-    }
-
-    .home-img {
-        margin-bottom: 5%;
-        flex: 1 1 50%;
         display: flex;
         justify-content: center;
-        align-items: center;
-    }
-    
-    .home-img img {
-        width: 100%;
-        height: auto;
-        max-width: 500px; /* Ou qualquer valor desejado */
-        transition: all 0.3s ease;
-    }
-
-    .pagination {
-        display: flex;               /* Garante que os itens fiquem em uma linha */
-        justify-content: center;     /* Centraliza a paginação */
-        margin: 15px 15px 40px;      /* Ajusta a margem */
+        margin: 25px 25px 55px;
     }
 }
-
 
 
 /* KEYFRAMES ANIMATION */
