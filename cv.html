@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>João Antunes — CV</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" href="images/favicon.ico">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; }
+    body {
+      background: #07111f;
+      color: #eef6ff;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+    }
+    .cv-page {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .cv-toolbar {
+      min-height: 64px;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: #0d1b2c;
+      border-bottom: 1px solid rgba(76, 201, 240, .22);
+    }
+    .cv-title {
+      font-size: 16px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .cv-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .cv-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(76, 201, 240, .35);
+      color: #eef6ff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      background: rgba(76, 201, 240, .08);
+    }
+    .cv-link:hover { background: rgba(76, 201, 240, .15); }
+    .cv-link.primary {
+      background: #13c6e6;
+      color: #06111d;
+      border-color: #13c6e6;
+    }
+    .cv-frame {
+      flex: 1;
+      width: 100%;
+      min-height: 0;
+      border: 0;
+      background: #fff;
+    }
+    @media (max-width: 620px) {
+      .cv-toolbar { min-height: 58px; padding: 8px 10px; }
+      .cv-title { font-size: 14px; }
+      .cv-link { min-height: 36px; padding: 0 10px; font-size: 12px; }
+      .hide-mobile { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="cv-page">
+    <header class="cv-toolbar">
+      <div class="cv-title">João Antunes — Curriculum Vitae</div>
+      <nav class="cv-actions" aria-label="CV actions">
+        <a class="cv-link hide-mobile" href="index.html">Back to portfolio</a>
+      </nav>
+    </header>
+    <embed class="cv-frame" src="cv/Joao_Antunes_OutSystems_Developer_CV.pdf#view=FitH" type="application/pdf">
+  </main>
+</body>
+</html>
